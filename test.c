@@ -1,36 +1,38 @@
 #include <stdio.h>
 
+void print_table(int n) {
 
-//int main() {
-//	int n = 0;
-//	int ret = 1;
-//	scanf_s("%d",&n);
-//	for (int i = 1; i <= n; i++) {
-//
-//		ret *= i;
-//
-//
-//
-//
-//	}
-//	printf("%d",ret);
-//
-//
-//
-//
-//
-//
-//	return 0;
-//}
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= i; j++) {
 
 
-int main() {
+
+
+			printf("%2d*%-2d=%-4d", i, j, i * j);
+		}
+
+		printf("\n");
+
+	}
+
+
+}
+
+
+
+
+
+/*/int main() {
 
 	int n = 0;
 	scanf_s("%d",&n);
-	
-	int ret=fac();
-	printf("%d",ret);
+	print_table(n);
+
+
+
+
+
+
 
 
 
@@ -38,4 +40,4 @@ int main() {
 
 
 	return 0;
-}
+}*/
